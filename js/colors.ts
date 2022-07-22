@@ -5,7 +5,8 @@ var coloresb: any = ['blue', 'red', 'pink', 'yellow','aliceblue','aqua'];
 btnchange?.addEventListener('click', generarNuevoColor);
 
 function generarNuevoColor(){
-	var  icolores = parseInt(Math.random()*coloresb.length);
+	var  icolores = [Math.floor(Math.random()*coloresb.length)];
 
 	fondo.style.backgroundColor = coloresb[icolores];
+    document.getElementById('nombreColor').innerHTML = icolores;
 }
