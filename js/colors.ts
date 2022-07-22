@@ -6,7 +6,8 @@ btnchange?.addEventListener('click', generarNuevoColor);
 
 function generarNuevoColor(){
 	var  icolores = [Math.floor(Math.random()*coloresb.length)];
+    var nomCOlor = coloresb[icolores];
 
 	fondo.style.backgroundColor = coloresb[icolores];
-    document.getElementById('nombreColor').innerHTML = icolores;
+    document.getElementById('nombreColor').innerHTML = nomCOlor;
 }
